@@ -1,0 +1,90 @@
+Html Tags
+------------------
+
+<h1> => create the main/big heading
+<h2> => create the second level heading
+<h3> => create the third level heading
+<h4> => create the fourth level heading
+<h5> => create the fifth level heading
+<h6> => create the sixth level heading
+<p> => create the the paragraphs
+
+<b> => make the bold text
+<i> => make the italic text
+<u> => draw the underline below of the text
+<strike> => cancel the text
+<mark>=> highlight the text with yellow color
+
+<sup> => used to move the text base line above
+                  or
+        any text is covert into power.
+
+<sub> => used to move the text base line below
+                  or
+        any text is covert into base.
+
+<pre> => used to display the information
+    on a webpage as it is how you written
+
+<code> =>The code element represents a fragment of computer code.
+
+<var>=>The var element represents a variable.
+
+<font>=> used to change textcolor,textsize,textlook
+
+
+<br>=> used to break the text or line. it is  a unpair tag.
+
+<img> => used to add the images on a webpage.it is  a unpair tag.
+
+<img> tag comes multiple attributes
+-------------------------------
+src="image path"
+width="set the image width"
+height="set the image height"
+border="set the image height"
+alt="set the alternate the if image not found" (FAQ)
+
+<marquee> => html marquee tag used to scroll the text or images
+on a webpage.by default scroll the text on a webpage right to left.(FAQ)
+
+<marquee> tag comes multiple attributes
+-------------------------------
+bgcolor="set the background color"
+behavior="change the behavior . by default behavior is scroll"
+behavior="scroll(default)| alternate |slide"
+
+direction="change the direction"
+direction="left(scroll),right,up,down "
+scrollamount="control the speed of the text"
+
+
+Html List Tags
+-------------------
+html List  tags are divided into three types
+
+
+1.ordered List
+2.unodered List
+3.define List
+
+
+1.ordered List
+----------------
+html ordered list used to keep the related items along with numbers
+in order.
+it is define with <ol> tag.
+<ol> comes with child tag , that is <li> tag for keep the content or text.
+
+
+ordered List comes with attributes
+--------------------------------------
+
+type="change the number format to other format"
+
+type="a or A or I or i"
+
+start="you can start the list with any number"
+start="96 or 101 or 74"
+
+
