@@ -48,7 +48,7 @@ alt="set the alternate the if image not found" (FAQ)
 <marquee> => html marquee tag used to scroll the text or images
 on a webpage.by default scroll the text on a webpage right to left.(FAQ)
 
-<marquee> tag comes multiple attributes
+<marquee> tag comes with multiple attributes
 -------------------------------
 bgcolor="set the background color"
 behavior="change the behavior . by default behavior is scroll"
