@@ -88,3 +88,32 @@ start="you can start the list with any number"
 start="96 or 101 or 74"
 
 
+
+Html tables
+----------------
+
+html tables are used to arrange the data on a webpage rows and columns.
+you want create the table html provide several tags.
+
+<table> => create the table
+<thead> => for keep heading rows
+<tbody> => for keep the data rows
+<tr> => create a row
+<th> => create heading cell
+<td> =>create the data cell
+
+
+<table> comes with attributes
+------------------------------------
+border="used to apply the border"
+it expect boolean values
+true=1
+false=0
+
+cellspacing="used to control space the two cells"
+cellpadding="used to increase the space between border and content"
+width="set the table width"
+bgcolor="set the background color"
+background="set the image as background"
+colspan="merge the columns"
+rowspan="merge the rows"
