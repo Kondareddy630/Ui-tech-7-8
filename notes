@@ -37,7 +37,7 @@ Html Tags
 
 <img> => used to add the images on a webpage.it is  a unpair tag.
 
-<img> tag comes multiple attributes
+it comes multiple attributes
 -------------------------------
 src="image path"
 width="set the image width"
@@ -48,7 +48,7 @@ alt="set the alternate the if image not found" (FAQ)
 <marquee> => html marquee tag used to scroll the text or images
 on a webpage.by default scroll the text on a webpage right to left.(FAQ)
 
-<marquee> tag comes with multiple attributes
+it comes multiple attributes
 -------------------------------
 bgcolor="set the background color"
 behavior="change the behavior . by default behavior is scroll"
@@ -71,8 +71,7 @@ html List  tags are divided into three types
 
 1.ordered List
 ----------------
-html ordered list used to keep the related items along with numbers
-in order.
+html ordered list used to keep the related items in order along with numbers.
 it is define with <ol> tag.
 <ol> comes with child tag , that is <li> tag for keep the content or text.
 
@@ -89,31 +88,103 @@ start="96 or 101 or 74"
 
 
 
-Html tables
+1.unordered List
 ----------------
+html unordered list used to keep the related items in order along bullets.
+it is define with <ul> tag.
+<ul> comes with child tag , that is <li> tag for keep the content or text.
 
-html tables are used to arrange the data on a webpage rows and columns.
-you want create the table html provide several tags.
 
-<table> => create the table
-<thead> => for keep heading rows
-<tbody> => for keep the data rows
-<tr> => create a row
+unordered List comes with attributes
+--------------------------------------
+
+type="disc or circle or square"
+
+Define List-
+----------------
+Define List used to define the title and their description.
+you want define the title you have use <dt> tag.
+you want define the description you have <dd> tag.
+togeather all titles inside <dl> tag
+    
+Html Tables
+------------------
+html tables are used to arrange the data on a webpage rows and
+columns you have use tables.
+you want create the table html provide group of tags.
+
+<table> => create table
+
+<thead> => keep heading rows
+
+<tbody> => keep data rows
+
+<tr> => create table row
+
 <th> => create heading cell
-<td> =>create the data cell
+    
+<td> =>create data cell
 
 
-<table> comes with attributes
-------------------------------------
-border="used to apply the border"
-it expect boolean values
-true=1
-false=0
+Table comes with attributes
+--------------------------------------
 
-cellspacing="used to control space the two cells"
-cellpadding="used to increase the space between border and content"
-width="set the table width"
-bgcolor="set the background color"
-background="set the image as background"
 colspan="merge the columns"
 rowspan="merge the rows"
+border="apply the borders"
+border="1" enable borders
+border="0" disable boders(default)
+cellspacing="change the space between two cells "
+cellpadding="change the space between border and content"
+bgcolor="set the background color"
+align="align the table center"
+width="set the width"
+
+Html entities
+-------------------------------
+
+html entities are used to add the special symbols on a webpage.
+ex: copyright,currency,trademarks ......
+
+Details & Summary Tags:=-
+-------------------------------
+details & summary Tags used create the collapsble(hide/show)
+content on a webpage.
+<details> => used to create the collapseble button.
+<summary> => used to change the title of collapsble button.
+
+
+<fieldset> & <legend> Tags:-
+-------------------------------
+<fieldset> tag used to apply the border around group of elements.
+<legend> used to define the title for border.
+
+<div> tag(FAQ)
+-------------------
+<div> is a container.
+used to group the related elements for apply the styles.
+it is a block level element
+
+note: you want apply the styles on group of element/s you should go with <div> tag.
+
+<span> tag(FAQ)
+----------------
+html span tag used to select the piece of text for apply the styles.
+it is a inline element
+
+Html links
+-------------------
+
+html links are define with <a> tag.
+html <a> tag used to navigate to any
+
+1.url
+2.html file
+3.html pdf file
+4.email
+5.mobile number
+6.video
+7.with in webpage
+
+
+
