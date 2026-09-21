@@ -156,8 +156,8 @@ content on a webpage.
 
 <fieldset> & <legend> Tags:-
 -------------------------------
-<fieldset> tag used to apply the border around group of elements.
-<legend> used to define the title for border.
+<fieldset> tag used to apply the border around group of element/s.
+<legend> used to define the title for fieldset.
 
 <div> tag(FAQ)
 -------------------
@@ -184,7 +184,10 @@ html <a> tag used to navigate to any
 4.email
 5.mobile number
 6.video
-7.with in webpage
+7.some location with in webpage
 
 
+html <iframe> tag
+-----------------------
+html <iframe> used with in webpage you can embeded another webpage information.
 
