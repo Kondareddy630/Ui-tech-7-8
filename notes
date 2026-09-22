@@ -191,3 +191,15 @@ html <iframe> tag
 -----------------------
 html <iframe> used with in webpage you can embeded another webpage information.
 
+
+html forms are used to collect the data from user then send to server.
+you want build the html form provide <form> tag.
+<form> comes with several elements
+
+<label>
+<input>
+<select>
+<textarea>
+<option>
+
+
