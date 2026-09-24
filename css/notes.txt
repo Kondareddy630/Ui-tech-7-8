@@ -1,0 +1,66 @@
+Css Notes
+--------------------
+1.Css stands for cascading style sheet
+2.it was developed and maintain by w3c org released in 1996.
+3.by using css you can design and style the webpages.
+4.working with css no need install special software. just browser,editor enough.
+5.html contains tags like that css contains properties ,using these
+properties  we are design and style the webpages.
+6.css current version is css3.
+7.css extension is .css
+
+What is css syntax
+-----------------------------
+selector {
+
+    property:value;
+    property:value;
+    property:value;
+    property:value;
+
+
+}
+ex:-
+
+
+h1{
+    color:red;
+    text-align:center;
+    background-color: pink;
+}
+
+
+Selector(FAQ)
+--------------------
+
+css selectors are used to select the html element for styling.
+you want select the html css provide number of selectors.
+
+they divided into five categories
+----------------------------------------
+1.Simple selectors (select elements based on name, id, class)
+2.Combinator selectors (select elements based on a specific relationship between them)
+3.Pseudo-class selectors (select elements based on a certain state)
+4.Pseudo-elements selectors (select and style a part of an element)
+5.Attribute selectors (select elements based on an attribute or attribute value)
+
+Simple selectors:
+---------------------
+Simple selectors are used to select elements based on their name, id, class.
+
+
+How many ways write the css code?(FAQ)
+---------------------------------------
+you can write the css code three ways
+1.inline css
+2.internal css
+3.external css
+
+inline css: inline css means write the css code inside html element using style attribute.
+ex:
+
+<h1 style="color:red;background:pink">Java Full Stack</h1>
+
+
+internal css: internal css means write the css code with in html file inside <style> tag.
+<style> placed inside side <head> part.
