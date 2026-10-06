@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ol li::marker{
+color:red;
+font-family: cursive;
+font-size: 15px;
+
+}
+
+ul li::marker{
+color:lightgray;
+}
+
+input::placeholder{
+    color:lightgrey;
+    padding-left: 10px;
+    font-family: cursive;
+    text-shadow: 0px 0px 2px black;
+    letter-spacing: 2px;
+}
+p{
+    margin: 50px;
+    text-align: justify;
+}
+
+#p1::first-letter{
+    color:red;
+    font-size: 50px;
+    font-family: cursive;
+    float: left;
+    margin-top: -20px;
+    
+}
+
+#p2::first-line{
+    color:green;
+    font-family: cursive;
+    background-color: lightgreen;
+}
+
+#span1{
+    background-color: pink;
+}
+
+::selection{
+    background-color:cyan;
+}
+
+#p3::before{
+    content:"😊";
+}
+
+#p3::after{
+    content:"😊";
+}
+</style>
+
+
+</head>
+<body>
+
+<p id="p3">Happy Shopping.</p>
+
+<p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis aperiam ipsum dolorum aut eum adipisci natus in, maxime nulla dolor, corrupti quas temporibus quod nam amet doloremque laborum a architecto <span id="span1">voluptas inventore excepturi</span> velit quos! Corrupti commodi animi fuga optio ipsa molestias aspernatur nemo! Voluptatem atque nostrum, amet corporis commodi doloribus natus itaque nulla nihil neque possimus aut et labore eos vero! Repellendus tempora sunt quas quod reiciendis maxime porro, fuga voluptatum perspiciatis? Fuga veritatis similique reprehenderit magni a! Deserunt atque ipsa aut quidem! Totam beatae tempora magnam perferendis ducimus hic illo molestias laudantium, temporibus autem consequuntur. Debitis, animi numquam?</p>
+
+<p id="p1">Morem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti veniam ut ipsum ducimus omnis quisquam culpa ad distinctio soluta consequuntur tenetur in nisi sed fugit sint delectus suscipit quia saepe officia quam quis, officiis quas sequi perferendis! Voluptatibus quis eveniet aperiam ratione, eligendi minus, reprehenderit quibusdam fugit, ipsam nostrum inventore quia tenetur rem porro necessitatibus omnis unde at? Facilis earum ducimus, temporibus excepturi magnam commodi ad hic est dolores libero numquam ratione sed aut officiis in ullam optio dolorem maiores?</p>
+
+<input type="text" placeholder="Enter Username">
+
+<ol>
+<li>html</li>
+<li>css</li>
+<li>javascript</li>
+<li>react</li>
+<li>angular</li>
+</ol>
+
+<ul>
+<li>html</li>
+<li>css</li>
+<li>javascript</li>
+<li>react</li>
+<li>angular</li>
+</ul>
+
+</body>
+</html>
