@@ -1,0 +1,28 @@
+//scope
+
+
+// global scope,function scope,block scope
+
+var city="hyd"; // global scope
+
+function printSalary()
+{
+
+    var salary=5000;//function scope
+
+    if(true)
+    {
+        let result="Pass"; // block scope
+    }
+
+
+}
+
+printSalary();
+
+
+
+
+
+
+
