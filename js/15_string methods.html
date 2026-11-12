@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+
+/*
+// string 
+
+let msg1='good morning';
+let msg2="good morning"; // string literals
+
+let msg3=`good morning`;  // template literals
+
+//string literals vs  template literals(FAQ)
+
+let msg4="hello students";
+let msg5=`
+
+hello students
+pls
+come 
+tomorrow
+drive is there
+
+
+`
+
+console.log(msg4);
+console.log(msg5);
+
+//
+
+let name="raju";
+let balance=5000;
+
+let msg6="Hello" + " " + name + " " + "your account balance=" + " " + balance;
+console.log(msg6);// js way
+
+let msg7= ` Hello ${name} your account balance=${balance}`;
+console.log(msg7);
+
+console.log(`
+
+sum:${10+20},
+mul:${10*5},
+div:${100/4}
+
+`);
+
+*/
+
+
+//string properties and methods
+
+
+let msg1="good night";
+console.log(msg1);
+
+//length
+
+console.log(msg1.length);
+console.log(msg1[0]);
+console.log(msg1[1]);
+console.log(msg1[-1]);
+
+//at()
+console.log(msg1.at(0));
+console.log(msg1.at(1));
+console.log(msg1.at(-1));
+
+//toUppeseCase() toLowerCase()
+
+console.log(msg1.toUpperCase());//GOOD NIGHT
+console.log(msg1.toLowerCase());//good night
+
+let username="Raju kumar";
+console.log(username);
+
+//charAt()
+console.log(username.charAt(0));
+console.log(username.charAt(1));
+console.log(username.charAt(2));
+
+(username.charAt(0)>='A' && username.charAt(0)<='Z')?console.log("Valid username"):console.log("Username should start with capital letter");
+
+
+//charCodeAt()
+
+console.log(username.charCodeAt(0));//ascii value
+console.log(username.charCodeAt(1));
+console.log(username.charCodeAt(2));
+
+
+(username.charCodeAt(0)>=65 && username.charCodeAt(0)<=90)?console.log("Valid username"):console.log("Username should start with capital letter");
+
+
+// indexOf()=>FAQ
+
+let email="a@bcdgmail.com";
+
+console.log(email.indexOf("@"));
+console.log(email.indexOf("a"));
+console.log(email.indexOf("z"));//-1
+
+(email.indexOf("@")==-1)?console.log("Invalid email"):console.log("Valid");
+</script> 
+
+</body>
+</html>

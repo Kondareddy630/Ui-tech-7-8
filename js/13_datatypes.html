@@ -59,8 +59,47 @@ console.log( typeof isManager);
 
 // null
 
+/*
 let age=prompt("Enter your age");
 console.log(age);
+*/
+
+
+let age=null;
+console.log(age);
+console.log(typeof age);
+
+
+// bigint
+
+
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+
+
+let num=9007199254740991;
+console.log(typeof num);
+
+
+let num1=9007199254740997n;
+
+console.log(typeof num1);
+
+
+//symbol()
+
+let id=Symbol();
+
+let student={
+
+    [id]:101,// hidden field
+    name:"raju",
+    course:"java",
+    fees:5000
+
+};
+
+console.log(student);
 
 </script> 
 

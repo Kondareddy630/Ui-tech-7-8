@@ -1,0 +1,183 @@
+avaScript Type Casting (Type Conversion)
+Type Casting in JavaScript means converting a value from one data type to another data type.
+
+For example:
+- String → Number
+- Number → String
+- String → Boolean
+- Number → Boolean
+JavaScript supports two types of type conversion:
+1. Explicit Type Conversion (Type Casting)
+2. Implicit Type Conversion (Type Coercion)
+1. Explicit Type Conversion (Type Casting)
+When a developer manually converts one data type into another, it is called Explicit Type Conversion.
+A. String to Number
+We can convert a string into a number using Number(), parseInt() and parseFloat().
+
+Example 1: Number()
+let a = "100";
+
+let result = Number(a);
+
+console.log(result);        // 100
+console.log(typeof result); // number
+
+
+Example 2: parseInt()
+let a = "100.50";
+
+console.log(parseInt(a)); // 100
+
+
+Example 3: parseFloat()
+let a = "100.50";
+
+console.log(parseFloat(a)); // 100.5
+
+
+B. Number to String
+We can convert a number into a string using String() or toString().
+let a = 100;
+
+let result = String(a);
+
+console.log(result);        // "100"
+console.log(typeof result); // string
+
+
+Using toString():
+let a = 100;
+
+let result = a.toString();
+
+console.log(result); // "100"
+
+
+C. Any Data Type to Boolean
+We can convert values into Boolean using Boolean().
+console.log(Boolean(1));        // true
+console.log(Boolean(0));        // false
+console.log(Boolean("Hello"));  // true
+console.log(Boolean(""));       // false
+console.log(Boolean(null));     // false
+console.log(Boolean(undefined));// false
+
+
+D. Boolean to Number
+console.log(Number(true));  // 1
+console.log(Number(false)); // 0
+
+
+E. Number to Boolean
+console.log(Boolean(100)); // true
+console.log(Boolean(0));   // false
+
+
+2. Implicit Type Conversion (Type Coercion)
+When JavaScript automatically converts one data type into another data type, it is called Implicit Type Conversion or Type Coercion.
+Example 1: String + Number
+let a = "100";
+let b = 20;
+
+console.log(a + b); // "10020"
+
+
+Explanation:
+- "100" is a string.
+- 20 is a number.
+- JavaScript converts 20 into a string.
+- Both values are concatenated.
+Example 2: String - Number
+let a = "100";
+let b = 20;
+
+console.log(a - b); // 80
+
+
+Explanation:
+- "100" is converted into number 100.
+- JavaScript performs subtraction.
+- Result is 80.
+Example 3: Boolean + Number
+console.log(true + 10);  // 11
+console.log(false + 10); // 10
+
+
+JavaScript converts:
+- true → 1
+- false → 0
+Example 4: String to Boolean in condition
+let name = "Rahul";
+
+if (name) {
+    console.log("Name is available");
+}
+
+
+Output:
+Name is available
+
+
+JavaScript treats a non-empty string as true.
+3. Important Type Conversion Examples
+Expression	Output	Reason
+Number("100")	100	String to number
+Number("Hello")	NaN	Invalid number
+String(100)	"100"	Number to string
+Boolean(0)	false	Falsy value
+Boolean(1)	true	Truthy value
+"10" + 20	"1020"	String concatenation
+"10" - 5	5	Numeric conversion
+true + 5	6	true becomes 1
+false + 5	5	false becomes 0
+null + 10	10	null becomes 0
+undefined + 10	NaN	undefined becomes NaN
+
+4. Truthy and Falsy Values
+This is an important concept in JavaScript type conversion.
+
+Falsy values:
+false
+0
+-0
+0n
+""
+null
+undefined
+NaN
+
+
+All other values are generally truthy, including empty arrays and empty objects.
+console.log(Boolean([]));  // true
+console.log(Boolean({}));  // true
+console.log(Boolean("0")); // true
+console.log(Boolean(" ")); // true
+
+
+5. Real-Time Example: Student Marks
+Suppose a student enters marks in an HTML input field.
+<input type="text" id="marks" value="80">
+<button onclick="checkMarks()">Check</button>
+
+<script>
+function checkMarks() {
+    let marks = document.getElementById("marks").value;
+
+    console.log(typeof marks); // string
+
+    marks = Number(marks);
+
+    console.log(typeof marks); // number
+
+    if (marks >= 35) {
+        console.log("Pass");
+    } else {
+        console.log("Fail");
+    }
+}
+</script>
+
+
+Why do we use Number() here?
+
+HTML input values are returned as strings. We convert the value into a number before performing numeric calculations.

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+
+// number methods 
+
+// toFixed()
+
+
+let price=85.1234;
+console.log(price);
+
+console.log(price.toFixed(2));
+console.log(price.toFixed(0));
+
+//toLocaleString()
+let views=50000000;
+console.log(views);
+console.log(views.toLocaleString('en-in',{notation:"compact"}));
+console.log(views.toLocaleString('en-in',{notation:"compact"}));
+console.log(views.toLocaleString('en-us',{notation:"compact"}));
+
+let salary=85000;
+console.log(salary);
+console.log(salary.toLocaleString("en-in",{style:"currency",currency:"INR",minimumFractionDigits:0}))
+
+// how to verify is a number or not?FAQ isNaN()
+
+
+console.log(isNaN("hello")); //true
+console.log(isNaN(100));// false
+
+//validate age
+
+let age="abc";
+(isNaN(age))?console.log("Age must number"):console.log(age);
+
+
+</script> 
+
+</body>
+</html>
