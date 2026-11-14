@@ -109,6 +109,60 @@ console.log(email.indexOf("a"));
 console.log(email.indexOf("z"));//-1
 
 (email.indexOf("@")==-1)?console.log("Invalid email"):console.log("Valid");
+
+
+// includes()
+
+
+console.log("Java script".includes("va"));//true
+console.log("Java script".includes("java"));//false
+console.log("Java script".includes("script"));//true
+console.log("Java script".includes("ava"));//true
+
+//split(),reverse()
+
+let message="hello";
+console.log(message);
+console.log(message.split(""));
+
+//wap print the string without loops(FAQ)
+console.log(message.split("").reverse().join(""));
+
+
+//startWith()
+
+let tech="Java script";
+
+console.log(tech.startsWith("Java"));//true
+console.log(tech.startsWith("java"));//true
+
+//endsWith()
+console.log(tech.endsWith("script"));//true
+console.log(tech.endsWith("stack"));//false
+
+//slice(),substring(),substr() FAQ
+
+let course="java script";
+console.log(course.slice(0,4));
+console.log(course.slice(5,8));
+console.log(course.slice(-6,-4));
+console.log(course.slice(-3));
+console.log(course.slice(4,0));
+
+console.log(course.substring(0,4));
+console.log(course.substring(-6,-4));
+console.log(course.substring(4,1));
+console.log(course.substring(8,5));
+
+
+console.log(course.substr(0,1));
+console.log(course.substr(0,3));
+console.log(course.substr(0,4));
+
+console.log(course.substr(-4));
+console.log(course.substr(-4,1));
+console.log(course.substr(-4,3));
+
 </script> 
 
 </body>

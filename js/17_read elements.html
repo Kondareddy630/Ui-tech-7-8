@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+
+let colors=["red","blue","gold","white","black"];
+console.log(colors);
+
+// length
+
+console.log(colors.length);
+console.log(colors.at(-1));// new way
+console.log(colors.length-1);
+console.log(colors[colors.length-1]);// old way
+
+//for loop(), for in, for of,map(), forEach(), fiter(),find()
+
+//for 
+for(let i=0;i<colors.length;i++)
+{
+    console.log(colors[i]); 
+}
+
+//for in
+
+for(let myindex in colors)
+{
+    console.log(myindex, colors[myindex]);
+}
+
+// for of
+
+for(let myele of colors)
+{
+    console.log(myele);
+}
+
+
+let numbers=[10,20,30,40,50,60];
+console.log(numbers);
+
+//map(), forEach(), filter(),find()
+
+numbers.map(function(ele,index){
+    console.log(ele,index);
+});
+
+numbers.forEach(function(ele,index){
+    console.log(ele,index);
+});
+
+
+let mynumbers=[1,2,3,4,5,6,7,8,9];
+
+let square=mynumbers.map(function(num){
+   return  num*num;
+});
+console.log(square);
+
+
+
+let square1=mynumbers.forEach(function(num){
+   return  num*num;
+});
+console.log(square1);
+
+
+// filter()
+
+let even=mynumbers.filter(function(num){
+    return num%2==0;//false true
+})
+console.log(even);
+
+
+let above5=mynumbers.filter(function(num){
+        return num>5;
+});
+console.log(above5);
+
+
+let mynumbers1=[1,85,74,52,13,14,18,19,20,25];
+
+// find() first even element
+
+
+let firsteven=mynumbers1.find(function(num){
+     return num%2==0;
+});
+
+console.log(firsteven);
+
+//findIndex()
+
+let firstevenindex=mynumbers1.findIndex(function(num){
+     return num%2==0;
+});
+
+console.log(firstevenindex);
+
+//findLast()
+
+let lasteven=mynumbers1.findLast(function(num){
+     return num%2==0;
+});
+
+console.log(lasteven);
+
+let lastevenindex=mynumbers1.findLastIndex(function(num){
+     return num%2==0;
+});
+
+console.log(lastevenindex);
+
+</script> 
+
+</body>
+</html>
