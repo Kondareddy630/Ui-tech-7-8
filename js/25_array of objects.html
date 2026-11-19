@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+
+
+
+let students=[
+{sid:101,name:"a",course:"java",fees:1000},
+{sid:102,name:"b",course:"ui",fees:9000},
+{sid:103,name:"c",course:"java",fees:9000},
+{sid:104,name:"d",course:"react",fees:3000},
+{sid:105,name:"e",course:"java",fees:8000}
+
+]
+
+
+// find max fees student
+
+let maxstudent=students.reduce(function(maxfees,s){
+
+     if(s.fees>maxfees.fees)
+     {
+        maxfees=s;
+     }
+
+
+
+    return maxfees;
+
+},students[0]);
+
+console.log(maxstudent);
+
+// course wise count
+
+
+let coursecount=students.reduce(function(group,s){
+
+
+if(group[s.course])
+{
+
+    group[s.course]=group[s.course]+1;
+}
+
+else{
+    group[s.course]=1;
+}
+
+
+    return group;
+
+},{});
+
+console.log(coursecount);
+
+
+
+console.table(students);
+
+// wap print all students name and course
+
+students.map(function(s){
+
+    console.log(`Name:${s.name} ,Course:${s.course}`)
+});
+
+// wap print only java students
+
+let javastudents=students.filter(function(s){
+    return s.course=="java";// 
+});
+
+console.table(javastudents);
+
+// wap find first java student
+
+let firstjava=students.find(function(s){
+    return s.course=="java";
+});
+
+console.table(firstjava);
+
+// find the total fees
+
+let total=students.reduce((sum,s)=>sum+s.fees,0);
+console.log(total);
+
+
+</script> 
+
+</body>
+</html>

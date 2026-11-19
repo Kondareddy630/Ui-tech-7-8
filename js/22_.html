@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+// object
+
+let emp={
+  empno:101,
+  name:"raju",
+  job:"manager",
+  salary:5000
+};
+
+//notations dot(.),brackets []
+console.log(emp.empno);
+console.log(emp.name);
+console.log(emp.job);
+console.log(emp.salary);
+console.log(emp["empno"]);
+console.log(emp["name"]);
+
+
+console.log()
+
+
+//keys()
+
+console.log(Object.keys(emp));
+
+//values()
+console.log(Object.values(emp));
+
+//entries()
+
+console.log(Object.entries(emp));
+
+// for in
+
+for(let prop in emp)
+{
+
+    console.log(prop,emp[prop]);
+}
+
+
+Object.entries(emp).forEach(function([key,value]){
+
+    console.log(key,value)
+})
+
+// in
+console.log("city" in emp);
+console.log("name" in emp);
+
+
+let student={
+    id:101
+};
+
+console.log(student);
+
+student.name="pooja";
+student.name="raju";
+
+let result1=delete student.id;
+console.log(result1);
+
+</script> 
+
+</body>
+</html>

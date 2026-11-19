@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+// object
+
+let emp={
+  empno:101,
+  name:"raju",
+  job:"manager",
+  salary:5000
+};
+
+//destructing
+let{empno,name,job,salary:mysal}=emp;
+
+
+let emp1={
+  empno:101,
+  name:"raju",
+  job:"manager",
+  salary:5000   
+};
+
+let{empno:eno,name:ename,job:ejob,salary:esal}=emp1;
+console.log(eno,ename,ejob,esal);
+
+
+</script> 
+
+</body>
+</html>

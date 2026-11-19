@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+
+
+//  reference copy
+
+let obj1={
+    x:10,
+    y:20
+}
+
+console.log(obj1);
+
+let obj2=obj1;
+console.log(obj2);
+
+obj2.x=85;
+
+console.log(obj1);
+console.log(obj2);
+
+obj1.y=500;
+console.log(obj1);
+console.log(obj2);
+
+// shallow  copy
+
+
+let student={
+    id:101,
+    name:"hello",
+    course:"java",
+    fees:5000,
+
+    address:{
+        city:"hyd"
+    }
+}
+
+
+console.log(student);
+
+let copystudent={...student};
+console.log(copystudent);
+
+copystudent.id=105;
+copystudent.name="hello raju";
+
+copystudent.address.city="delhi";
+
+
+console.log(student);
+console.log(copystudent);
+
+//deep copy
+
+let mystudent=structuredClone(student);
+console.log(mystudent);
+
+mystudent.address.city="pune";
+console.log(student);
+console.log(mystudent);
+
+
+
+
+</script> 
+
+</body>
+</html>

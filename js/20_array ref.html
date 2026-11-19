@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+
+// let a1=[10,20,30];
+// let b1=a1;// reference copy
+
+// console.log(a1);
+// console.log(b1);
+
+// b1.push(96);
+
+// console.log(a1);
+// console.log(b1);
+// a1.unshift(45);
+// console.log(b1);
+// console.log(a1);
+
+
+let colors=["red","blue","cyan",["white","black"]];
+console.log(colors);
+
+// // shallow copy
+// let mycolors=[...colors];
+// console.log(mycolors);
+
+// mycolors.push("white","black");
+
+// console.log(colors);
+// console.log(mycolors);
+
+// colors[3][2]="lime";
+
+// console.log(colors);
+// console.log(mycolors);
+
+//deep copy
+let newarry=structuredClone(colors);
+console.log(newarry);
+
+newarry[3][0]="hello";
+console.log(colors);
+console.log(newarry);
+
+// in
+
+console.log(0 in colors);
+console.log(5 in colors);
+
+let num=[3,2,5];
+console.log(2 in num);//true
+console.log(5 in num);//false
+
+</script> 
+
+</body>
+</html>
