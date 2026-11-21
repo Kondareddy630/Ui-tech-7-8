@@ -23,6 +23,7 @@ let students=[
 
 // find max fees student
 
+/*
 let maxstudent=students.reduce(function(maxfees,s){
 
      if(s.fees>maxfees.fees)
@@ -30,13 +31,34 @@ let maxstudent=students.reduce(function(maxfees,s){
         maxfees=s;
      }
 
-
-
     return maxfees;
 
 },students[0]);
 
 console.log(maxstudent);
+
+*/
+
+let maxstudent = students.reduce(function(group, s) {
+
+    if (group[s.course]) {
+
+        if (s.fees > group[s.course].fees) {
+            group[s.course] = s;
+        }
+
+    } else {
+        group[s.course] = s;
+    }
+
+    return group;
+
+}, {});
+
+console.log(maxstudent);
+
+
+
 
 // course wise count
 

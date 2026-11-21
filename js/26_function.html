@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+
+
+<script>
+
+
+
+//function declaration
+
+message();
+
+function message()
+{
+  console.log("Good night!!!");
+}
+
+message();
+message();
+message();
+
+
+
+
+//function expression
+
+let sum=function(){
+    let a=100;
+    let b=200;
+    let c=a+b;
+    console.log(c);
+}
+
+console.log(sum);
+
+sum();
+sum();
+
+
+// arrow function
+
+
+let message1=() =>console.log("Hello students!!!");
+message1();
+message1();
+
+let num=[1,2,3];
+
+num.map(num=>console.log(num));
+num.map((num,index)=>console.log(num,index));
+
+
+
+
+
+</script> 
+
+</body>
+</html>
