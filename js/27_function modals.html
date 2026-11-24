@@ -152,6 +152,163 @@
 // console.log(id,name);
 
 
+// with arg with return
+
+
+
+// function sum(a,b,c)
+// {
+    
+//     return (a+b)*c;
+// }
+
+// let r1=sum(10,20,30);
+// console.log(r1);
+
+
+// function messages(){
+
+//     console.log("Hello");
+//     console.log("Hai");
+//     return;
+//     console.log("Good night");
+//     console.log("hello students1");
+
+// }
+// messages();
+
+
+// function message(){
+//     return  "hello";
+    
+    
+// }
+
+// let r1=message();
+// console.log(r1);
+
+
+//callback functions(), highorder functions (FAQ)
+
+
+let colors=["red","blue","gold"];
+
+colors.map(function(color){
+    console.log(color);
+});
+
+
+
+// sum
+// function sum(a,b){
+//     return a+b;
+// };
+
+// function sub(a,b){
+//     return a-b;
+// };
+
+
+
+
+// function calculate(a,b,callback)
+// {
+  
+//     return callback(a,b); //sum(a,b)=>30
+// }
+
+// let r1=calculate(10,20,sum);
+// console.log(r1);
+
+// let r2=calculate(500,220,sub);
+// console.log(r2);
+
+// let r3=calculate(10,20,(a,b)=>a+b);
+// console.log(r3);
+
+
+//
+
+
+// function outer(){
+
+//     let a=10;
+    
+//     return function inner(){
+//         let b=20;
+//         let c=a+b;
+//         return c;
+//     }
+   
+// }
+// let r1=outer();
+// r1();
+
+// let r1=outer()();
+// console.log(r1);
+
+
+
+//iife
+
+(function(){
+    console.log("hello");
+}());
+
+//Recursive functions
+
+
+// function printnumbers(n)
+// {
+
+//     if(n<=0)
+//     {
+//         return;
+//     }
+
+//     printnumbers(n-1);
+//     console.log(n);
+
+   
+
+// }
+
+// printnumbers(5);
+
+
+let student={
+    sid:101,
+    name:"hello",
+    address:{
+        city:"hyd",
+        location:"kphb"
+    }
+};
+
+console.log(Object.keys(student));
+console.log(typeof student.address);
+
+//
+
+function allkeys(student)
+{
+    for(let s in student)
+    {
+        console.log(s);
+
+        if(typeof student[s] == "object" && typeof student[s] != null)
+        {
+            allkeys(student[s]);
+        }
+
+        
+    }
+}
+
+allkeys(student);
+
+
+
 
 </script>
 
